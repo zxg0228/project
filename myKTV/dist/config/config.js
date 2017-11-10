@@ -1,0 +1,1 @@
+app.config(["$httpProvider",function(e){e.defaults.transformRequest=function(e){var n=[];for(var o in e)n.push(encodeURIComponent(o)+"="+encodeURIComponent(e[o]));return n.join("&")},e.defaults.withCredentials=!0,e.defaults.headers.post={"Content-Type":"application/x-www-form-urlencoded"}}]);
