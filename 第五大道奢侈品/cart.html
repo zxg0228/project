@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>第五大道:中国首家奢侈品和商务礼品销售中心，Gucci、Prada 普拉达、Burberry 巴宝莉、Cartier 卡地亚、Tiffany、Coach</title>
+		<link rel="shortcut icon"  href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/siderbar.css"/>
+		<script src="js/jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/siderbar.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".h").load("header.html",function(){
+					head($(".header"));
+					logo($(".logo"));
+					na($(".nav"));
+				});
+				$(".fBox").load("footer.html");
+				$(".s").load("sidebar.html",function(){
+					sider($(".sidebar"));
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="h">
+		</div>
+		<div class="meng">
+		</div>
+		
+		
+		<div class="cart">
+			<div class="step1"></div>
+			<table border="1" cellspacing="0" bordercolor="#c9c9c9">
+				<tr>
+					<th><input type="checkbox" name="all"  value="" checked="true"/>全选</th>
+					<th>商品</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="shang" id="shang" value="" checked="true"/></td>
+					<td>
+						<img src="img/14326942808679_200x200.jpg" alt="" />阳光天使好运兰花紫蜜粉 8g
+					</td>
+					<td>261.00</td>
+					<td>
+						<input type="button" name="jian" id="jian" value=" " />
+						<input type="text" name="num" value="1" />
+						<input type="button" name="add" id="add" value="+" />
+					</td>
+					<td>261.00</td>
+					<td><span>删除</span></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="shang" id="shang" value="" checked="true"/></td>
+					<td>
+						<img src="img/148299323635_800x800_200x200.jpg" alt="" />蒲公英蜜粉 7g
+					</td>
+					<td>261.00</td>
+					<td>
+						<input type="button" name="jian" id="jian" value=" " />
+						<input type="text" name="num" value="1" />
+						<input type="button" name="add" id="add" value="+" />
+					</td>
+					<td>261.00</td>
+					<td><span>删除</span></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="shang" id="shang" value="" checked="true"/></td>
+					<td>
+						<img src="img/7172_thumb_G_1308537787861.jpg" alt="" />邂逅柔情女士淡香水50ml
+					</td>
+					<td>698.00</td>
+					<td>
+						<input type="button" name="jian" id="jian" value=" " />
+						<input type="text" name="num" value="1" />
+						<input type="button" name="add" id="add" value="+" />
+					</td>
+					<td>698.00</td>
+					<td><span>删除</span></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="shang" id="shang" value="" checked="true"/></td>
+					<td>
+						<img src="img/14138716568032_200x200.jpg" alt="" />白色珍珠贝母表盘女士机械手表 H2423	
+					</td>
+					<td>49100.00</td>
+					<td>
+						<input type="button" name="jian" id="jian" value=" " />
+						<input type="text" name="num" value="1" />
+						<input type="button" name="add" id="add" value="+" />
+					</td>
+					<td>49100.00</td>
+					<td><span>删除</span></td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<input type="checkbox" name="all"  value="" checked="true"/>全选
+						<span id="totDel">删除</span>
+						<div class="total">合计：￥<span class="red" id="priceTotal">0.00</span></div>
+						<div class="selected" id="selected">已选商品<span class="red" id="selectedTotal">0</span>件<span class="up" >︽</span><span class="down" style="display: none;">︾</span></div>
+						<div class="f" id="ff" style="display: none;">
+							<div class="d1" id="dd0">
+								<img src="img/14326942808679_200x200.jpg"/>
+								<div class="ca" name="cal">
+									取消选择
+								</div>
+							</div>
+							<div class="d1" id="dd1">
+								<img src="img/148299323635_800x800_200x200.jpg"/>
+								<div class="ca" name="cal">
+									取消选择
+								</div>
+							</div>
+							<div class="d1" id="dd2">
+								<img src="img/7172_thumb_G_1308537787861.jpg"/>
+								<div class="ca" name="cal">
+									取消选择
+								</div>
+							</div>
+							<div class="d1" id="dd3">
+								<img src="img/14138716568032_200x200.jpg"/>
+								<div class="ca" name="cal">
+									取消选择
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>结算</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="fBox">	
+		</div>
+		
+		<div class="s">	
+		</div>
+	</body>
+	<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+</html>

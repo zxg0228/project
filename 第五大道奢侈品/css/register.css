@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+.header{
+	width: 100%;
+	min-width: 1000px;
+	height: 100px;
+	background-color: #fff;
+}
+.header .container{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.header .container .left{
+	float: left;
+}
+.header .container .left img{
+	vertical-align: middle;
+	margin: 10px 5px 0 0;
+}
+.header .container .left span{
+	font-size: 16px;
+	color:#949292 ;
+	background: none;
+}
+.header .container .right{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.header .container .right img{
+	vertical-align: middle;
+}
+.header .container .right span{
+	font-size: 14px;
+	background: none;
+}
+
+.register{
+	width: 100%;
+	min-width: 1000px;
+	height: 660px;
+	background: url(../img/zhuce-bg.jpg) no-repeat;
+}
+.register .container{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.register .container .left{
+	width: 655px;
+	height: 100%;
+	background: url(../img/zhuce-icon.png) no-repeat;
+	position: absolute;
+	top:0;
+	left: -100px;
+}
+.register .container .right{
+	width: 450px;
+	height: 595px;
+	background-color: #fff;
+	float: right;
+	margin-top: 45px;
+	padding: 15px 60px;
+	box-shadow: 1px 1px 3px #ccc,-1px -1px 3px #ccc;
+}
+.register .container .right>p{
+	width: 113px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 5px 5px 0 0;
+}
+.register .container .right form{
+	width: 332px;
+	height: 436px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: 1px auto;
+	padding-top: 33px;
+	position: relative;
+}
+.register .container .right form label[for]{
+	display: inline-block;
+	width: 75px;
+	height: 33px;
+	text-align: right;
+	line-height: 33px;
+	font-size: 12px;
+}
+.register .container .right form .getcode{
+	display: block;
+	width: 70px;
+	height: 27px;
+	background-color: #fff;
+	font-size: 12px;
+	position: absolute;
+	top:36px;
+	right: -26px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 27px;
+}
+.register .container .right form .getcode:hover{
+	background-color: #A78668;
+	color: #fff;
+}
+.register .container .right form input[id]{
+	width: 212px;
+	height: 33px;
+}
+.register .container .right form input:last-of-type{
+	width: 212px;
+	height: 33px;
+	background-color: #CF0101;
+	color: #fff;
+	border: none;
+	margin: 25px 0 25px 74px;
+	cursor: pointer;
+	outline: none;
+}
+.register .container .right form p{
+	width: 212px;
+	height: 22px;
+	line-height: 22px;
+	margin: 2px 0 2px 75px;
+	font-size: 12px;
+}
+.register .container .right form p.active{
+	border: 1px solid #FF9BA5;
+	background-color: #FEE0E3;
+}
+.register .container .right form label{
+	font-size: 12px;
+}
+.register .container .right form a{
+	font-size: 12px;
+	color: #000;
+}
+.register .container .right form a:hover{
+	color: #BC7528;
+}
+.register .container .right .bottom{
+	padding-top: 30px;
+	text-align: center;
+}
+.register .container .right .bottom label{
+	font-size: 12px;
+}
+.register .container .right .bottom span{
+	background: none;
+	color: red;
+}
+
+.registerPop{
+	width: 100%;
+	min-width: 600px;
+	height: 100%;
+	min-height: 406px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.registerPop .container{
+	width: 600px;
+	height: 406px;
+	background: url(../img/skin_bg.png) repeat;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.registerPop .container .top{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	background: url(../img/skin_title.png) no-repeat 25px 37px;
+	overflow: hidden;
+	position: relative;
+}
+.registerPop .container .top h3{
+	font-size: 18px;
+	margin: 33px 0 0 60px;
+}
+.registerPop .container .top a{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 23px;
+	color: #000;
+}
+.registerPop .container .top a:hover{
+	color: #BC7528;
+}
+.registerPop .container .content{
+	width: 386px;
+	margin: 20px auto;
+	font-size: 12px;
+}
+.registerPop .container .content input{
+	width: 212px;
+	height: 33px;
+	margin: 10px 0;
+}
+.registerPop .container .content label{
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+}
+.registerPop .container .content button{
+	width: 212px;
+	height: 33px;
+	border: none;
+	outline: none;
+	background-color: #CF0101;
+	color: #fff;
+	margin: 40px 0 0 75px;
+}
+.registerPop .container .content p{
+	display: block;
+	width: 212px;
+	color: red;
+	margin-left: 75px;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/*固定顶部*/
+.fixB{
+	width: 100%;
+	min-width: 1210px;
+	height: 120px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	bottom: 0;
+}
+.fixB div{
+	width: 1210px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../img/foot_popup.png) no-repeat center;
+	position: relative;
+}
+.fixB div a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	right: 22px;
+	top: 0;
+}

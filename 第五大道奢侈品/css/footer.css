@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	display: inline-block;
+	background: url(../img/brandstore_share.png) no-repeat;
+}
+span{
+	display: inline-block;
+	background: url(../img/share02.png) no-repeat;
+}
+b{
+	display: inline-block;
+}
+/*底部*/
+.footer{
+	width: 100%;
+	min-width: 1220px;
+	height: 600px;
+	border-top:1px solid #ccc;
+	background: url(../img/footer_message_bg.jpg) no-repeat bottom center;
+}
+.footer a:hover{
+	text-decoration: underline;
+}
+.footer .container{
+	width: 1220px;
+	height: 400px;
+	white-space:nowrap; 
+	overflow: hidden;
+	margin: 0 auto;
+}
+.footer .container .fTop{
+	width: 100%;
+	min-width: 1220px;
+	height: 118px;
+	border-bottom: 1px solid #ccc;
+}
+.footer .container .fTop>li{
+	width: 244px;
+	height: 118px;
+	padding-top: 25px;
+	float: left;
+}
+.footer .container .fTop>li img{
+	margin-right: 5px;
+	float: left;
+}
+.footer .container .fTop>li h1{
+	margin-top: 12px;
+	font-size: 12px;
+}
+.footer .container li a{
+	color: #000;
+	font-size: 12px;
+}
+.footer .container .lis{
+	margin: 0 100px 0 20px;
+	float: left;
+}
+.footer .container .lis h1{
+	font-size: 12px;
+}
+.footer .container .lis li:first-of-type{
+	height: 70px;
+	line-height: 70px;
+}
+.footer .container .lis:last-of-type{
+	margin-right: 20px;
+}
+.footer .fB1{
+	width: 372px;
+	height: 60px;
+	padding-top: 24px;
+	margin: 0 auto;
+}
+.footer .fB2{
+	width: 806px;
+	height: 12px;
+	margin: 0 auto;
+}
+.footer .fB1 li,.footer .fB2 li{
+	float: left;
+	height: 12px;
+	line-height: 0px;
+	padding: 10px;
+	border-right:1px solid #fff ;
+}
+.footer .fB1 li a,.footer .fB2 li a{
+	color: #fff;
+	font-size: 12px;
+}
+.footer .fB1 li:last-of-type,.footer .fB2 li:last-of-type{
+	border: none;
+}
+.footer p{
+	color: #fff;
+	font-size: 12px;
+	width: 804px;
+	margin: 20px auto;
+}
+.footer .fbImg{
+	width: 334px;
+	white-space: nowrap;
+	margin: 0 auto;
+}

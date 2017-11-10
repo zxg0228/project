@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>第五大道:中国首家奢侈品和商务礼品销售中心，Gucci、Prada 普拉达、Burberry 巴宝莉、Cartier 卡地亚、Tiffany、Coach</title>
+		<link rel="shortcut icon"  href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/siderbar.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/siderbar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="left">
+					<a href=""><img src="img/v30_5luxlogo.png"/></a>
+					<span>欢迎登录</span>
+				</div>
+				<div class="right">
+					<img src="img/8-132_03.jpg"/>
+					<span>客服热线4008-6767-38</span>
+				</div>
+			</div>
+		</div>
+		<div class="login_f">
+			<div class="container">
+				<div class="left"></div>
+				<div class="right">
+					<p>登录第五大道</p>
+					<form action="" method="post">
+						<input type="text" id="username" value="" placeholder="用户名/Email/手机号"/>
+						<p></p>
+						<input type="password" id="pas" value="" placeholder="请输入密码"/>
+						<p></p>
+						<input type="checkbox" /><label for=""> 记住我（下次自动登录）</label>
+						<a href="">忘记密码？</a>
+						<input type="button" value="登录" id="loginBtn"/>
+						<label for="" style="float: right;">还没有账号？ <a href="register.html">立即注册</a></label>
+					</form>
+					<div class="bottom">
+						<p>合作网站帐号登录：</p>
+						<a href=""><img src="img/qq.jpg"/></a>
+						<a href=""><img src="img/xinlang.jpg"/></a>
+						<a href=""><img src="img/weixin.jpg"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="f">	
+		</div>
+		
+		<div class="fixB">
+			<div>
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+		
+		<div class="s">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".f").load("footer.html");
+			$(".s").load("sidebar.html",function(){
+				sider($(".sidebar"));
+			});
+		})
+	</script>
+</html>

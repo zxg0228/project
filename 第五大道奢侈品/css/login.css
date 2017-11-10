@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+.header{
+	width: 100%;
+	min-width: 1000px;
+	height: 100px;
+	background-color: #fff;
+}
+.header .container{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.header .container .left{
+	float: left;
+}
+.header .container .left img{
+	vertical-align: middle;
+	margin: 10px 5px 0 0;
+}
+.header .container .left span{
+	font-size: 16px;
+	color:#949292 ;
+	background: none;
+}
+.header .container .right{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.header .container .right img{
+	vertical-align: middle;
+}
+.header .container .right span{
+	font-size: 14px;
+	background: none;
+}
+
+.login_f{
+	width: 100%;
+	min-width: 1000px;
+	height: 570px;
+	background: url(../img/mobile-bg.jpg) no-repeat;
+}
+.login_f .container{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.login_f .container .left{
+	width: 705px;
+	height: 100%;
+	background: url(../img/mobile-icon.png) no-repeat;
+	position: absolute;
+	top:0;
+	left: -150px;
+}
+.login_f .container .right{
+	width: 450px;
+	height: 500px;
+	background-color: #fff;
+	float: right;
+	margin-top: 45px;
+	padding: 50px 75px;
+}
+.login_f .container .right>p{
+	font-size: 16px;
+	color: #6D6D6D;
+}
+.login_f .container .right form{
+	width: 302px;
+	height: 305px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: 17px auto 25px;
+	padding: 33px 27px 25px;
+}
+.login_f .container .right form #username{
+	width: 250px;
+	height: 34px;
+	padding-left: 40px;
+	background: url(../img/login_reg_input_user_bg.jpg) no-repeat;
+	border: 1px solid #ccc;
+}
+.login_f .container .right form #pas{
+	width: 248px;
+	height: 34px;
+	padding-left: 40px;
+	background: url(../img/login_reg_input_pw_bg.jpg) no-repeat;
+	border: 1px solid #ccc;
+}
+.login_f .container .right form input:last-of-type{
+	width: 248px;
+	height: 34px;
+	background-color: #CF0101;
+	color: #fff;
+	border: none;
+}
+.login_f .container .right form p{
+	width: 248px;
+	height: 22px;
+	line-height: 22px;
+	margin: 2px 0;
+	font-size: 12px;
+}
+.login_f .container .right form p.active{
+	border: 1px solid #FF9BA5;
+	background-color: #FEE0E3;
+}
+.login_f .container .right form label{
+	font-size: 12px;
+	line-height: 40px;
+}
+.login_f .container .right form a{
+	font-size: 12px;
+	color: #BC7528;
+	float: right;
+	text-decoration: underline;
+	line-height: 40px;
+}
+.login_f .container .right .bottom{
+	margin-left: 20px;
+}
+.login_f .container .right .bottom p{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+
+/*固定顶部*/
+.fixB{
+	width: 100%;
+	min-width: 1210px;
+	height: 120px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	bottom: 0;
+}
+.fixB div{
+	width: 1210px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../img/foot_popup.png) no-repeat center;
+	position: relative;
+}
+.fixB div a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	right: 22px;
+	top: 0;
+}

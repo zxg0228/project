@@ -1,0 +1,449 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	display: inline-block;
+	background: url(../img/brandstore_share.png) no-repeat;
+}
+span{
+	display: inline-block;
+	background: url(../img/share02.png) no-repeat;
+}
+b{
+	display: inline-block;
+}
+/*头部*/
+.header{
+	width: 100%;
+	min-width: 1230px;
+	height: 30px;
+	background-color: #F2F2F2;
+	font-size: 12px;
+	color: #666;
+}
+.header a{
+	color: #666;
+}
+.header a:hover{
+	color:#B69066;
+}
+.header li{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	float: left;
+	position: relative;
+}
+.header li div{
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	background-color: #DFDFDF;
+}
+.header .left{
+	width: 318px;
+	height: 30px;
+	margin: 0 60px;
+	float: left;
+	overflow: hidden;
+}
+.header .left b{
+	width: 16px;
+	height: 14px;
+	background: url(../img/home.png) no-repeat;
+}
+.header .left i{
+	width: 20px;
+	height: 25px;
+	background-position: -352px -343px;
+	vertical-align: middle;
+}
+.header .right{
+	/*width: 507px;*/
+	height: 30px;
+	float: right;
+	margin: 0 60px;
+}
+.header .right b{
+	width: 22px;
+	height: 24px;
+	background: url(../img/youli.gif) no-repeat;
+	vertical-align: text-bottom;
+}
+.header .right li:nth-of-type(5) i{
+	width: 12px;
+	height: 7px;
+	background-position: -349px -449px;
+}
+.header .right li:nth-of-type(5):hover i{
+	background-position: -349px -477px;
+}
+.header .right li:nth-of-type(5):hover>a,.header .right li:last-of-type:hover a{
+	color: #c00;
+}
+.header .right li:nth-of-type(5) a:hover,.header .right li:nth-of-type(1) a:hover{
+	color: #c00;
+}
+.header .right li:last-of-type i{
+	width: 30px;
+	height: 16px;
+	background-position: -288px -378px;
+	vertical-align: middle;
+}
+.header .right li:last-of-type:hover i{
+	background-position: -288px -413px;
+}
+.header .right .myList{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	display: none;
+}
+.header .right .myList li{
+	float: none;
+}
+.header .right>li:last-of-type{
+	margin: 0;
+	padding: 0 20px;
+}
+.header .right .download{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.header .right .download li{
+	float: none;
+	height: auto;
+	line-height: 15px;
+	font-size: 12px;
+	text-align: center;
+}
+.header .right .download img{
+	width: 106px;
+}
+.header .right .download span{
+	font-size: 14px;
+	color: #CC0000;
+	background: none;
+}
+
+/*logo*/
+.logo{
+	width: 100%;
+	min-width: 1230px;
+	height: 110px;
+}
+.logo .container{
+	width: 1220px;
+	height: 110px;
+	margin: 0 auto;
+}
+.logo .container>ul{
+	float: left;
+}
+
+.logo .container>ul>li{
+	height: 110px;
+	margin: 0 30px 0 0;
+	font-size: 0;
+	float: left;
+}
+.logo .container>ul input{
+	width: 305px;
+	height: 39px;
+	border: 2px solid #C69C6D;
+	outline: none;
+	padding-left: 5px;
+	
+}
+.logo .container>ul button{
+	width: 80px;
+	height: 39px;
+	background-color: #C69C6D;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 12px;
+}
+.logo .container .third{
+	width: 385px;
+	padding-top:30px;
+	position: relative;
+}
+.logo .container .third .listShow{
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #C9C9C9;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	left:0;
+	top:69px;
+	z-index: 1;
+}
+.logo .container .third .listShow p{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+}
+.logo .container .search li{
+	font-size: 12px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 20px 0 0;
+}
+.logo .container .search li a{
+	color: #999;
+}
+.logo .container .search li a:hover{
+	color: #CC0000;
+}
+.logo .container .cart{
+	width: 140px;
+	height: 35px;
+	text-align: center;
+	box-shadow: -1px -1px 1px #ccc,1px 1px 1px #ccc;
+	margin-top:33px;
+	font-size: 12px;
+	float: right;
+	position: relative;
+	padding-top: 5px;
+}
+.logo .container .cart b{
+	width: 22px;
+	height: 24px;
+	vertical-align: top;
+	background: url(../img/v30cart.png) no-repeat;
+}
+.logo .container .cart i{
+	width: 20px;
+	height: 20px;
+	background-position: -312px -338px;
+}
+.logo .container .cart label{
+	color: #c00;
+}
+.logo .container .cart>div{
+	width: 290px;
+	height: 80px;
+	padding: 10px;
+	line-height: 25px;
+	text-align: center;
+	box-shadow: -1px -1px 1px #ccc,1px 1px 1px #ccc;
+	position: absolute;
+	top:36px;
+	right: 0;
+	background-color: #fff;
+	display: none;
+}
+
+/*导航条*/
+.nav{
+	width: 100%;
+	min-width: 1230px;
+	height: 40px;
+	background-color: #000;
+}
+.nav .container{
+	width: 1220px;
+	height: 100%;
+	margin: 0 auto;
+}
+.nav .container .left{
+	float: left;
+}
+.nav .container .left>li{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px ;
+	float: left;
+	font-size: 14px;
+}
+.nav .container .left>li:hover>a{
+	color: #fff;
+}
+.nav .container .left a{
+	color: #C8A985;
+}
+.nav .container .left>li:last-of-type:hover a{
+	color: #fff;
+}
+.nav .container .left span{
+	width: 25px;
+	height: 30px;
+	background-position: -55px -174px;
+	vertical-align: middle;
+}
+.nav .container .left>li:last-of-type:hover span{
+	background-position: -363px -257px;
+}
+.nav .container .left li.first{
+	padding: 0 35px;
+	background-color: #CF0101;
+	position: relative;
+}
+.nav .container .left li.first>a{
+	color: #fff;
+}
+/*二级导航*/
+.nav .first .nav2{
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.nav .first .nav2>li{
+	background: url(../img/brand_category1.png) no-repeat;
+	padding-left: 40px;
+	border-bottom: 1px solid #fff;
+	position: relative;
+}
+
+.nav .first .nav2>li:hover{
+	background: url(../img/brand_category2.png) no-repeat;
+	background-color: #fff;
+}
+
+.nav .first .nav2>li a{
+	color: #000;
+}
+.nav .first .nav2>li a:hover{
+	color: #BC7528;
+}
+.nav .first .nav2>li span{
+	width: 20px;
+	height: 20px;
+	background-position: -305px -40px;
+	position: absolute;
+	right:0;
+	top:10px;
+	display: none;
+}
+/*三级导航*/
+.nav .first .nav2 .nav3{
+	width: 800px;
+	background-color: #fff;
+	position: absolute;
+	left:126px;
+	top:-1px;
+	display: none;
+}
+.nav .first .nav3 .showList{
+	width: 600px;
+	height: auto;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	margin-left: 20px;
+	overflow: hidden;
+}
+.nav .first .nav3 .showList h1{
+	font-size: 14px;
+	color: #CF0101;
+	width: 105px;
+	padding-left: 20px;
+	float: left;
+	cursor: pointer;
+}
+.nav .first .nav3 .showList h1:hover{
+	text-decoration: underline;
+}
+.nav .first .nav3 .showList h1.noLink{
+	cursor: auto;
+}
+.nav .first .nav3 .showList h1.noLink:hover{
+	text-decoration:none;
+}
+.nav .first .nav3 .showList div{
+	float: left;
+	width: 480px;
+	height: auto;
+	font-size: 12px;
+}
+.nav .first .nav3 .showList div a{
+	margin-right: 10px;
+	color: #666;
+}
+.nav .first .nav3 .showList div a:hover{
+	text-decoration: underline;
+}
+.nav .first .nav3 .showList div li{
+	width: 230px;
+	float: left;
+} 
+.nav .first .nav3 .showList div h2{
+	font-size: 14px;
+	cursor: pointer;
+}
+.nav .first .nav3 .showList div h2:hover{
+	text-decoration: underline;
+}
+.nav .first .nav3 .showBtn{
+	width: 600px;
+	height: auto;
+	padding: 10px 0;
+	margin-left: 20px;
+	overflow: hidden;
+}
+.nav .first .nav3 button{
+	width: 115px;
+	height: 30px;
+	background-color: #CC0000;
+	border: none;
+	outline: none;
+	margin-left: 20px;
+	color: #fff;
+}
+
+
+.nav .container .right{
+	float: right;
+	margin-right: 20px;
+}
+.nav .container .right li{
+	width: 30px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin: 0 5px;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	overflow: hidden;
+}
+.nav .container .right li a{
+	color: #fff;
+	font-size: 13px;
+}
+.nav .container .right li span{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+.nav .container .right li:first-of-type span{
+	background-position: -239px -73px;
+}
+.nav .container .right li:nth-of-type(2) span{
+	background-position: -295px -73px;
+}
+.nav .container .right li:last-of-type span{
+	background-position: -353px -73px;
+}
+.nav .container .right li:hover{
+	width: 170px;
+}

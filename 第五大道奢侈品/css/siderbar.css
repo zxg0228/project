@@ -1,0 +1,336 @@
+/*侧边栏*/
+/**{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+
+.sidebar{
+	height: 100%;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	position: fixed;
+	right:-298px;
+	top:0;
+	z-index: 1;
+}
+.sidebar .box{
+	width: 298px;
+	height: 100%;
+	overflow-y:scroll;
+	overflow-x: auto;
+}
+.sidebar .cart{
+	width: 281px;
+	height:100%;
+	background-color: #fff;
+	padding: 0 12px;
+	overflow-y: scroll;
+	overflow-x: auto;
+	text-align: center;
+}
+.sidebar .cart div{
+	width: 237px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	float: left;
+}
+.sidebar .cart div a{
+	float: right;
+	font-size: 18px;
+	color: #000;
+}
+.sidebar .cart p{
+	color: #666;
+}
+.sidebar .siderT{
+	width: 37px;
+	position: absolute;
+	left:-37px;
+	top:140px;
+}
+.sidebar .siderT li,.sidebar .siderB li{
+	width: 37px;
+	height: 37px;
+	border-radius: 5px 0 0 5px;
+	background-color: #333333;
+	margin: 1px 0;
+	position: relative;
+	cursor: pointer;
+}
+.sidebar .siderT li:hover,.sidebar .siderB li:hover{
+	background-color: #C69C6D;
+}
+.sidebar .siderT li span,.sidebar .siderB li span{
+	width: 37px;
+	height: 37px;
+}
+.sidebar .siderT li:first-of-type span{
+	background-position: -87px -158px;
+}
+.sidebar .siderT li:nth-of-type(2) span{
+	background-position: -138px -154px;
+}
+.sidebar .siderT li:nth-of-type(3) span{
+	background-position:-202px -153px;
+}
+.sidebar .siderT li:nth-of-type(4) span{
+	background-position: -258px -161px;
+}
+.sidebar .siderT li:first-of-type:hover span{
+	background-position: -87px -123px;
+}
+.sidebar .siderT li:nth-of-type(2):hover span{
+	background-position: -138px -124px;
+}
+.sidebar .siderT li:nth-of-type(3):hover span{
+	background-position:-202px -124px;
+}
+.sidebar .siderT li:nth-of-type(4):hover span{
+	background-position: -258px -125px;
+}
+
+.sidebar .siderB{
+	width: 37px;
+	position: absolute;
+	left:-37px;
+	bottom:20px;
+}
+.sidebar .siderB li:first-of-type span{
+	background-position: -310px -154px;
+}
+.sidebar .siderB li:nth-of-type(2) span{
+	background-position: -373px -156px;
+}
+.sidebar .siderB li:nth-of-type(3) span{
+	background: url(../img/line_bg.png) no-repeat 10px 10px;
+}
+.sidebar .siderB li:nth-of-type(4) span{
+	background-position: -437px -153px;
+}
+.sidebar .siderB li:first-of-type:hover span{
+	background-position: -310px -123px;
+}
+.sidebar .siderB li:nth-of-type(2):hover span{
+	background-position: -373px -123px;
+}
+.sidebar .siderB li:nth-of-type(3):hover span{
+	background: url(../img/line_bg.png) no-repeat 10px -18px;
+}
+.sidebar .siderB li:nth-of-type(4):hover span{
+	background-position: -436px -124px;
+}
+
+.sidebar .siderB li div,.sidebar .siderT li div{
+	width: 110px;
+	height: 37px;
+	background-color: #fff;
+	position: absolute;
+	top:0px;
+	left:-110px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 37px;
+	display: none;
+	border: 1px solid #ccc;
+}
+.sidebar .siderB li div:after,.sidebar .siderT li div:after{
+	display: block;
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 5px solid transparent;
+	border-left-color: #fff;
+	position: absolute;
+	right: -10px;
+	top:13px;
+}
+.sidebar .siderB li:first-of-type div{
+	width: 125px;
+	height: 137px;
+	left:-125px;
+}
+
+.loginPop{
+	width: 100%;
+	min-width: 420px;
+	height: 100%;
+	min-height: 385px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.loginPop .container{
+	width: 420px;
+	height: 385px;
+	background: url(../img/skin_bg.png) repeat;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+}
+.loginPop .container .lo{
+	width: 400px;
+	height: 365px;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+.loginPop .container .lo .top{
+	width: 100%;
+	height: 37px;
+	padding: 0 10px;
+	line-height: 37px;
+	color: #fff;
+	font-size: 14px;
+	background-color: #C8A985;
+}
+.loginPop .container .lo .top a{
+	float: right;
+	width: 20px;
+	height: 35px;
+	background: url(../img/share02.png) no-repeat -475px -250px;
+}
+.loginPop .container .lo form{
+	width: 260px;
+	height: 230px;
+	margin: 0 auto;
+	padding: 30px 0;
+	border-bottom: 1px solid #ccc;
+}
+.loginPop .container .lo label:nth-of-type(2n+1){
+	font-size: 12px;
+	float: left;
+	line-height: 25px;
+}
+.loginPop .container .lo label:nth-of-type(2n){
+	font-size: 12px;
+	float: right;
+	line-height: 25px;
+}
+.loginPop .container .lo input{
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	outline: none;
+	padding:0 15px;
+}
+.loginPop .container .lo input:last-of-type{
+	background-color: #D00000;
+	color: #fff;
+	border: none;
+	margin: 5px 0;
+}
+.loginPop .container .lo form a{
+	font-size: 12px;
+	color: #999;
+	text-decoration: underline;
+	float: left;
+}
+.loginPop .container .lo form a:last-of-type{
+	float: right;
+}
+.loginPop .container .lo p{
+	font-size:12px ;
+	width: 115px;
+	margin: 20px 70px;
+}
+
+
+.feedback{
+	width: 100%;
+	min-width: 802px;
+	height: 100%;
+	min-height: 545px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.feedback .container{
+	width: 802px;
+	height: 545px;
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid #fff;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+}
+.feedback .container .cont{
+	width: 780px;
+	height: 523px;
+	border: 1px solid #000;
+	background-color: #F2F2F2;
+}
+.feedback .container .cont .top{
+	width: 100%;
+	height: 37px;
+	padding: 0 10px;
+	line-height: 37px;
+	color: #fff;
+	font-size: 14px;
+	background-color: #C8A985;
+}
+.feedback .container .cont .top a{
+	float: right;
+	width: 20px;
+	height: 35px;
+	background: url(../img/share02.png) no-repeat -475px -250px;
+}
+.feedback .container .cont form{
+	width: 740px;
+	height: 453px;
+	margin: 20PX auto;
+}
+.feedback .container .cont .title{
+	width: 100%;
+	height: 120px;
+	background-color: #FFFFFF;
+	padding: 10px 20px;
+}
+.feedback .container .cont .title p{
+	font-size: 12px;
+	line-height: 25px;
+}
+.feedback .container .cont .title p label{
+	color: #CCAF8E;
+}
+.feedback .container .cont form>label{
+	font-size: 12px;
+	line-height: 30px;
+}
+.feedback .container .cont form textarea{
+	width: 100%;
+	height: 110px;
+	padding: 10px 20px;
+	outline: none;
+}
+.feedback .container .cont form input{
+	width: 424px;
+	height: 34px;
+	font-size: 14px;
+	outline: none;
+	padding: 0 20px;
+}
+.feedback .container .cont form button{
+	float: right;
+	height: 30px;
+	width: 112px;
+	background-color: #C8A985;
+	color: #fff;
+	margin-top: 20px;
+	border: none;
+	outline: none;
+}

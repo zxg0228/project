@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>第五大道:中国首家奢侈品和商务礼品销售中心，Gucci、Prada 普拉达、Burberry 巴宝莉、Cartier 卡地亚、Tiffany、Coach</title>
+		<link rel="shortcut icon"  href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/siderbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.idcode.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery.idcode.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/siderbar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="left">
+					<a href=""><img src="img/v30_5luxlogo.png"/></a>
+					<span>注册第五大道</span>
+				</div>
+				<div class="right">
+					<img src="img/8-132_03.jpg"/>
+					<span>客服热线4008-6767-38</span>
+				</div>
+			</div>
+		</div>
+		<div class="register">
+			<div class="container">
+				<div class="left"></div>
+				<div class="right">
+					<p>使用手机注册</p>
+					<form action="" method="post">
+						<label for="">您的手机：</label><input type="text" id="username" value=""/>
+						<a href="javascript:;" class="getcode">获取验证码</a>
+						<p></p>
+						<label for="">手机验证码：</label><input type="text" id="checkcode" value=""/>
+						<p></p>
+						<label for="">密码：</label><input type="password" id="pas" value=""/>
+						<p></p>
+						<label for="">确认密码：</label><input type="password" id="repas" value=""/>
+						<p></p>
+						<input type="checkbox" checked="checked" style="margin-left: 60px;"/><label> 我已阅读并同意<a href="">《第五大道商城服务条款》</a></label>
+						<input type="button" value="注册" id="registerBtn"/><br />
+						<label style="float: right;">已有账号？ <a href="login.html" style="color: #BC7528;text-decoration: underline;">立即登录</a></label>
+					</form>
+					<div class="bottom">
+						<label for="">立即注册免费获得<span>1880元</span>优惠券</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="registerPop">
+			<div class="container">
+				<div class="top">
+					<h3>短信验证码获取</h3>
+					<a href="javascript:;">&times;</a>
+				</div>
+				<div class="content">
+					<ul>
+						<li>
+							<label for="">*我的手机：</label>
+							<input type="text" name="" id="phone" value="" />
+							输入您的手机号
+						</li>
+						<li>
+							<label for="">*：</label>
+							<!--<img src="img/gencode.png" alt="" style="vertical-align: middle;"/>-->
+							<span id="idcode"></span>
+							<a href="" style="color: #666;">看不清？</a>
+						</li>
+						<li>
+							<label for="">*识别码：</label>
+							<input type="text" name="" id ="Txtidcode" class ="txtVerification" value="" />
+							输入此图形识别码
+						</li>
+					</ul>
+					<button>获取短信验证码</button>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="f">	
+		</div>
+		
+		<div class="fixB">
+			<div>
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+		
+		<div class="s">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".f").load("footer.html");
+			$(".s").load("sidebar.html",function(){
+				sider($(".sidebar"));
+			});
+			
+		})
+	</script>
+</html>

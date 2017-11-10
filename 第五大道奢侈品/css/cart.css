@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;;
+	box-sizing: border-box;
+}
+.cart span{
+	cursor: pointer;
+	color: #0000FF;
+	background: none;
+}
+.cart span:hover{
+	color: #C8A985;
+	background: none;
+}
+
+.cart{
+	width: 1190px;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 12px;
+}
+.cart .step1{
+	width: 700px;
+	height: 46px;
+	background: url(../img/cart_step.jpg) no-repeat top left;
+	float: right;
+	margin: 30px 0;
+	clear: right;
+}
+
+.cart table{
+	width: 1190px;
+	/*border-top: 3px solid skyblue;*/
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 100px auto;
+}
+.cart table img{
+	width: 100px;
+	height: 80px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.cart table td:nth-of-type(4){
+	font-size: 0;
+}
+.cart table td:nth-of-type(4) input:nth-of-type(2n+1){
+	width: 25px;
+	height: 25px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	background-color: #C8A985;
+	color: #fff;
+	/*margin: 0 -8px;*/
+}
+
+.cart table td:nth-of-type(4) input:nth-of-type(2){
+	width: 50px;
+	height: 25px;
+	text-align: center;
+}
+.cart table th{
+	height: 40px;
+	background-color: #EBEAEA;
+	font-size: 14px;
+	border-left: none;
+	border-right: none;
+	border-top:none;
+}
+.cart table td{
+	width: 150px;
+	height: 100px;
+	/*border: 1px solid skyblue;*/
+	border-left: none;
+	border-right: none;
+}
+.cart table tr td:nth-of-type(2){
+	width: 380px;
+	text-align: left;
+	padding-left: 20px;
+}
+.cart table tr:last-of-type{
+	background-color: #EAEAEA;
+}
+.cart table tr:last-of-type td{
+	text-align: left;
+	height: 50px;
+	padding-left: 20px;
+	border-color: #C8C8C8;
+	position: relative;
+	font-size: 14px;
+}
+.cart table tr:last-of-type #priceTotal{
+	font-size: 16px;
+	font-weight: bold;
+}
+.cart table tr:last-of-type td:last-of-type{
+	text-align: center;
+	width: 150px;
+	padding-left: 0;
+	color: #fff;
+	background-color: #D31920;
+}
+.cart table tr:last-of-type div{
+	float: right;
+	margin-right: 20px;
+}
+.cart table tr:last-of-type div .red{
+	color: #D31920;
+}
+.cart table tr:last-of-type div .up:hover,.cart table tr:last-of-type div .down:hover{
+	color: #D31920;
+}
+.cart table tr:nth-of-type(2):hover,.cart table tr:nth-of-type(3):hover,.cart table tr:nth-of-type(4):hover,.cart table tr:nth-of-type(5):hover{
+	background-color: #EEF6FF;
+}
+.cart table tr:last-of-type .f{
+	width: 1190px;
+	height: 100px;
+	/*border: 1px solid #ccc;*/
+	position: absolute;
+	top:-100px;
+	left:-1px;
+	background-color: #fff;
+}
+.cart table tr:last-of-type .f .d1{
+	width: 102px;
+	height: 82px;
+	border: 1px solid #ccc;
+	margin: 8px;
+	float: left;
+	position: relative;
+}
+.cart table tr:last-of-type .d1 .ca{
+	display: none;
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #000000;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	top:0;
+	right: 0;
+	margin-right: 0;
+	cursor: pointer;
+}
+.cart table tr:last-of-type .f .d1:hover .ca{
+	display: block;
+}
+
+.h{
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+.meng{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	background-color: rgba(127,127,127,0.5);
+	display: none;
+}
